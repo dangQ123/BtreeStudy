@@ -5,28 +5,29 @@ import edu.njust.btree.BtreeNode;
 public class Main {
 
     public static void main(String[] args) {
-        BtreeNode node = new BtreeNode(3);
-        node = node.insert(3);
-        node = node.insert(24);
-        node = node.insert(37);
-        node = node.insert(45);
-        node = node.insert(50);
-        node = node.insert(53);
-        node = node.insert(61);
-        node = node.insert(90);
-        node = node.insert(100);
-        node = node.insert(70);
+        // root 作为树根
+        BtreeNode root = new BtreeNode(3);
+        root = root.insert(3);
+        root = root.insert(24);
+        root = root.insert(37);
+        root = root.insert(45);
+        root = root.insert(50);
+        root = root.insert(53);
+        root = root.insert(61);
+        root = root.insert(90);
+        root = root.insert(100);
+        root = root.insert(70);
         System.out.println("--------原树：---------");
-        node.print();
+        root.print();
         System.out.println("--------删除50后：---------");
-        node = node.delete(50);
-        node.print();
+        root = root.delete(50);
+        root.print();
         System.out.println("--------删除53后：---------");
-        node = node.delete(53);
-        node.print();
+        root = root.delete(53);
+        root.print();
         System.out.println("--------删除37后：---------");
-        node = node.delete(37);
-        node.print();
+        root = root.delete(37);
+        root.print();
     }
 
 }
