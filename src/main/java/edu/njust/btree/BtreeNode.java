@@ -14,7 +14,7 @@ public class BtreeNode {
     LinkedList<Integer> values;
 
     /**
-     * 父节点
+     * 父节点指针
      */
     BtreeNode parent;
 
